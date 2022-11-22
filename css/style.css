@@ -1,14 +1,14 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    color: #2E2F42;
-}
-
 :root {
     --link-color: #2E2F42;
     --link-hover: #434455;
     --link-active: #4D5AE5;
     --main-color: #434455;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #2E2F42;
 }
 
 .logo {
@@ -42,12 +42,12 @@ body {
     color: var(--link-color);
 }
 
-.nav__link:hover,
-.nav__link:focus {
+.nav__link:hover {
     color: var(--link-hover);
 }
 
-.nav__link:active {
+.nav__link:active,
+.nav__link:focus {
     color: var(--link-active);
 }
 
@@ -129,4 +129,30 @@ body {
 
 .filter>li>button {
     cursor: pointer;
+}
+
+.item-filter {
+    list-style: none;
+}
+
+.item-filter>a {
+    color: #2E2F42;
+    text-decoration: none;
+}
+
+.item-filter>h2 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.item-filte>p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #434455;
+}
+
+.item-text {
+    line-height: 1.5;
+    color: #F4F4FD;
 }
