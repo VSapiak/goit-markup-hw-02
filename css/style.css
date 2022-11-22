@@ -25,10 +25,6 @@ body {
     color: #4D5AE5;
 }
 
-.logo:focus {
-    color: var(--main-color);
-}
-
 .nav {}
 
 .nav__list {}
