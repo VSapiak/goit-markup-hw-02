@@ -8,6 +8,7 @@
     --sybtitle-color: #2E2F42;
     --button-color: #F4F4FD;
     --same-white-color: #E7E9FC;
+    --active-color: #404BBF;
 }
 
 body {
@@ -28,6 +29,10 @@ body {
 
 .logo_span {
     color: var(--logo-color);
+}
+
+.logo_footer {
+    color: var(--button-color);
 }
 
 .nav {}
@@ -87,7 +92,11 @@ body {
     font-size: 16px;
     line-height: 19px;
     color: var(--white-color);
-    background: #4D5AE5;
+    background: var(--link-active);
+}
+
+.btn:active .btn:focus {
+    background-color: var(--active-color);
 }
 
 .section-item>.section-list {
@@ -148,6 +157,16 @@ body {
     line-height: 1.5;
     background: var(--button-color);
     border: 1px solid var(--same-white-color);
+}
+
+.button:active,
+.button:focus {
+    color: var(--white-color);
+    background-color: var(--link-active);
+}
+
+.filter-link {
+    list-style: none;
 }
 
 .item-filter {
